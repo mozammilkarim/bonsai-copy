@@ -1,7 +1,8 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
 import web from "../Pictures/img2.png";
 import PrimaryButton from "./PrimaryButton";
+import '../App.css'
+
 
 function Home1({id="home", name = "Grow your business with", imgsrc = web }) {
     return (
@@ -27,8 +28,9 @@ function Home1({id="home", name = "Grow your business with", imgsrc = web }) {
                     <div className="flex justify-center items-center header-img">
                         <img
                             src={imgsrc}
-                            className=" animated"
+                            className="animated"
                             alt="HomeImg"
+                            style={{    animation:" up-down 2s ease-in-out infinite alternate-reverse both"}}
                         />
                     </div>
                 </div>

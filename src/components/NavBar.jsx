@@ -7,10 +7,10 @@ const NavBar = () => {
     const [showMenu, setShowMenu] = useState(false)
     const SmallMenu = () => {
         return (
-            <div className='flex flex-col justify-start pt-10 text-[17px] items-center  px-3 sm:px-5 w-full min-h-screen fixed top-0 right-0 z-[50] bg-white '>
-                <div className='w-full flex justify-between items-center py-2'>
+            <div className='flex flex-col justify-center overflow-hidden pt-10 text-[17px] items-center  px-3 sm:px-5 w-full min-h-screen fixed top-0 right-0 z-[50] bg-white '>
+                <div className='w-full max-w-[20rem] flex justify-between items-center py-2'>
 
-                    <a href='#home' className='text-[#00b289]'>
+                    <a href='#home' className='text-[#00b289] text-3xl ' style={{fontFamily:"La Belle Aurore, cursive"}}>
                         {/* <img src={logo2} alt="bonsai" /> */}
                         Karimji.tech
                     </a>
@@ -19,7 +19,7 @@ const NavBar = () => {
                         <div className=' w-[1.75rem] h-[2px] bg-black my-[2px] rounded-sm opacity-75 rotate-[45deg]  origin-center translate-[-0.5px] transition-all ' style={{transition:"all ease 0.8s"}} ></div>
                     </div>
                 </div>
-                <div className='w-full flex  flex-col  items-start  '>
+                <div className='w-full max-w-[20rem] flex  flex-col  items-start  '>
                     
                     {/* <span className='w-full h-[2px] bg-black opacity-75'></span> */}
                     <a href={"#about"} onClick={() => { setShowMenu(false) }} className='text-[grey] py-3  cursor-pointer w-full text-start'>
@@ -41,7 +41,7 @@ const NavBar = () => {
                     </a>
                 </div>
                 <div className='w-fit flex flex-col  justify-center items-center '>
-                    <PrimaryButton text={"Connect"} className={"my-2 w-full"} />
+                    <PrimaryButton text={"Connect"} className={"my-1 w-[100%] px-10 text-center"} />
                     <SecondaryButton text={"What's App"} className={"text-center w-full my-1"} />
                 </div>
             </div>
@@ -51,7 +51,7 @@ const NavBar = () => {
         <>
 
             {!showMenu ? <div className='p-3 pt-5 sm:p-[2rem] flex flex-wrap justify-between items-center'>
-                <a href='#home' className='text-[#00b289] text-2xl'>
+                <a href='#home' className='text-[#00b289] text-3xl ' style={{fontFamily:"La Belle Aurore, cursive"}} >
                     {/* <img src={logo} alt="bonsai" /> */}
                     Karimji.tech
 

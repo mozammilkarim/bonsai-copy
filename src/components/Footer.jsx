@@ -7,7 +7,7 @@ import mail from "../assets/mail.png"
 
 const socials = [
   {
-    link: "https://www.instagram.com/invites/contact/?i=1xsh5lcwgpm17&utm_content=p5r0zct",
+    link: " https://www.instagram.com/invites/contact/?i=f26ktlmv971&utm_content=q3x41pu",
     img: instagram,
     name: "instagram"
   },
@@ -29,12 +29,6 @@ const Footer = () => {
       <span className='font-semibold text-xl'>
         &copy;2022 Made with Love by Karimji.tech
       </span>
-      {/* <div className='flex sm:flex-row flex-col justify-center items-center gap-3'>
-        <span>For Suggestions or Help</span>
-        <a href="mailto:help@karimji.tech" >
-          <img src={mail} alt="mail" className='w-[2rem] h-[2rem]'/>
-        </a>
-      </div> */}
       <div className='flex justify-center items-center p-3'>
         {socials.map((social, index) => {
           return (
